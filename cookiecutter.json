@@ -1,0 +1,10 @@
+{
+    "author_name": "Michael Goerz",
+    "author_email": "goerz@stanford.edu",
+    "project_name": "my-script",
+    "module_name": "{{cookiecutter.project_name|replace('-','_')}}",
+    "script_name": "{{cookiecutter.project_name}}",
+    "version": "1.0.0",
+    "description": "console script",
+    "url": "https://github.com/goerz/{{cookiecutter.project_name}}"
+}
