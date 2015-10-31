@@ -63,10 +63,13 @@ will be created, containing the following files:
     ├── Makefile
     ├── README.markdown
     ├── my_script.py
+    ├── test_my_script.py
     └── setup.py
 
 
 The project contains a single module, `my_script` in this example, whose `main`
 function is set up as an entry-point in `setup.py`. The `Makefile` contains some
-shortcuts for installing and uninstalling via `pip`, and for pushing to PyPI or
-the PyPI test server.
+shortcuts for installing and uninstalling via `pip`, for pushing to PyPI or
+the PyPI test server, and for running tests.
+
+

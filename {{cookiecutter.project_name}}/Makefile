@@ -20,4 +20,7 @@ test-upload:
 test-install:
 	pip install -i $(TESTPYPI) {{cookiecutter.project_name }}
 
-.PHONY: install develop uninstall upload test-upload test-install
+test: develop
+	py.test -v --doctest-modules {{cookiecutter.module_name}}.py test_{{cookiecutter.module_name}}.py
+
+.PHONY: install develop uninstall upload test-upload test-install test
