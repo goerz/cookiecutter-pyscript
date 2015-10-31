@@ -23,6 +23,3 @@ def main(debug):
         logger.setLevel(logging.DEBUG)
         logger.debug("Enabled debug output")
 
-
-if __name__ == "__main__":
-    sys.exit(main())
