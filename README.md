@@ -2,7 +2,7 @@ cookiecutter-pyscript
 =====================
 
 A [cookiecutter][] template for a single Python console script based on the
-[click]][] library. The script will be pip-installable via setuptools
+[click][] library. The script will be pip-installable via setuptools
 `entry_points`.
 
 [cookiecutter]: (https://github.com/audreyr/cookiecutter)
