@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 """{{ cookiecutter.description }}"""
+# Copyright (C) {{cookiecutter.year}} {{cookiecutter.author_name}}. See LICENSE for terms of use.
 import sys
-import click
-from click import echo
 import logging
 
+import click
+from click import echo
+
 __version__ = '{{ cookiecutter.version }}'
-__author__ = '{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>'
 
 
 @click.command()

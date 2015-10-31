@@ -6,5 +6,7 @@
     "script_name": "{{cookiecutter.project_name}}",
     "version": "1.0.0",
     "description": "console script",
-    "url": "https://github.com/goerz/{{cookiecutter.project_name}}"
+    "url": "https://github.com/goerz/{{cookiecutter.project_name}}",
+    "year": 2015,
+    "license": ["MIT", "GPL", "Public Domain"]
 }

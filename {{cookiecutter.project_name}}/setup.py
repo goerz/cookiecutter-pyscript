@@ -29,6 +29,7 @@ setuptools.setup(
     classifiers=[
         'Environment :: Console',
         'Natural Language :: English',
+        {%if cookiecutter.license == "GPL"%}'License :: OSI Approved :: GNU General Public License v2 (GPLv2),'{%elif cookiecutter.license == "Public Domain"%}'License :: Public Domain',{%else%}'License :: OSI Approved :: MIT License',{%endif%}
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',

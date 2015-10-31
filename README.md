@@ -24,7 +24,11 @@ or
 
     cookiecutter gh:goerz/cookiecutter-pyscript
 
-You should then change the classifiers in `{{ project_name }}/setup.py`. It is assumed that the project will run on the latest versions of Python 2 and 3, so you should remove any classifiers that do not apply. The full list of PyPI classifiers can be found [here][classifiers]. The generated README file will be very minimal, and you are encouraged to extend it.
+You should then change the classifiers in `{{ project_name }}/setup.py`. It is
+assumed that the project will run on the latest versions of Python 2 and 3, so
+you should remove any classifiers that do not apply. The full list of PyPI
+classifiers can be found [here][classifiers]. The generated README file will be
+very minimal, and you are encouraged to extend it.
 
 [classifiers]: https://pypi.python.org/pypi?:action=list_classifiers
 
@@ -39,16 +43,23 @@ Variables
 * `version`: Initial version of the script
 * `description`: (Short) description to appear as the doc-string of the module, in the documentation of the console script, in the README, and on PyPI
 * `url`: The project URL (e.g., on Github)
+* `year`: The copyright year
+* `license`: The license under wich the code will be available (choice of MIT, GPL, or Public Domain)
 
-Note that generally, `script_name` `module_name`, and `project_name` should be the same, except possibly for the use of hyphens and underscores: `script_name` should generally prefer hyphens over underscores, whereas `module_name` must not contain hyphens. In any case, `project_name` should match either `script_name` or `module_name`.
+Note that generally, `script_name` `module_name`, and `project_name` should be
+the same, except possibly for the use of hyphens and underscores:
+`script_name`/`project_name` should generally prefer hyphens over underscores,
+whereas `module_name` must not contain hyphens.
 
 
 Structure and Features
 ----------------------
 
-Using `my_script` as the `module_name`, a project folder (with `project_name`) will be created, containing the following files:
+Using `my_script` as the `module_name`, a project folder (with `project_name`)
+will be created, containing the following files:
 
     .
+    ├── LICENSE
     ├── Makefile
     ├── README.markdown
     ├── my_script.py
